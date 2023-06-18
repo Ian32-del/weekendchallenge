@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cc/style.css">
+    <title>Calculator</title>
+    
+</head>
+<body>
+    <script>
+        var basic_salary = prompt("Enter your basic salary");
+        var house_rent =prompt("Enter your house rent amount ");
+        var medical_allowance =prompt("Enter your medical allowance");
+        var gross_salary = parseInt(basic_salary)+parseInt(house_rent)+parseInt(medical_allowance)
+        var tax = gross_salary *0.4;
+        var net_income=gross_salary-tax;
+        document.write("<br>Your Net Income is \t  "+net_income );
+        document.write("<br>Tax Deducted on Gross pay was\t  "+tax); 
+    </script>
+</body>
+</html>
